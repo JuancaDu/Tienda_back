@@ -21,10 +21,7 @@ public class ReportesControlador {
 	@Autowired
 	private IReporteService serviceReportes;
 	
-	//@GetMapping("/reportes")
-	//public String mostrarReportes(Model model) {
-	//	return "reportes";
-	//}
+	
 	
 	@GetMapping ("/listarVentasClientes")
     public List<ReportesModel> listarVentasCientes() {

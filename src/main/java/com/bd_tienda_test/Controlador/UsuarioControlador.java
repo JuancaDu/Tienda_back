@@ -42,15 +42,7 @@ public class UsuarioControlador {
 
 	}	
 
-	//@GetMapping("/Menu")
-	//public String mostarMenu() {
-	//	return "Menu";
-	//}
 	
-	//@GetMapping("/index")
-	//public String mostarIndex() {
-	//	return "index";
-	//}
 	
 	
 	@GetMapping("/listarUsuario")
@@ -66,11 +58,7 @@ public class UsuarioControlador {
 		return true;
 	}	
 	
-	//@GetMapping("/newUsuario")
-	//public String agregarUsuario (Model model) {
-	//	model.addAttribute("usuario", new UsuarioModel());
-	//	return "formUsuarios.html";
-	//}
+	
 	
 	@GetMapping ("/Usuario/{Cedula}")
 	public UsuarioModel obtenerUsuarioPorCedula (@PathVariable String Cedula)

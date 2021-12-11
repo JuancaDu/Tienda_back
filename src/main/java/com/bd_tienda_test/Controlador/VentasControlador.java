@@ -29,13 +29,7 @@ public class VentasControlador {
 	private IFacturaService serviceFactura;
 	
 	
-	//@GetMapping("/mostrarFormVentas")
-	//public String mostarFormVentas(Model model) {
-	//	model.addAttribute("usuarios",serviceUsuario.listarUsuarios());
-	//	model.addAttribute("clientes",serviceCliente.listarClientes());
-	//	model.addAttribute("productos",serviceProducto.listarProductos());
-	//	return "ventas2.html";
-	//}
+	
 	
 	@PostMapping("/saveFactura")
 	public boolean saveFactura (@RequestBody FacturaModel f) {

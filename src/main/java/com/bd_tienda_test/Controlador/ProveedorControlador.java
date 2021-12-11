@@ -40,11 +40,7 @@ public class ProveedorControlador {
 		return true;
 	}	
 	
-	//@GetMapping("/newProveedor")
-	//public String agregarProveedor (Model model) {
-	//	model.addAttribute("proveedor", new ProveedorModel());
-	//	return "formProveedores.html";
-	//}
+	
 	
 	@GetMapping ("/Proveedor/{nit}")
 	public ProveedorModel obtenerProveedorPorNit (@PathVariable String nit)

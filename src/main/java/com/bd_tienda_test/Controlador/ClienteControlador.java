@@ -19,7 +19,7 @@ import com.bd_tienda_test.Interfaces.Service.IClienteService;
 import com.bd_tienda_test.Model.ClienteModel;
 
 @CrossOrigin(origins = "http://localhost:3000")
-//@Controller se cambia por RestController
+
 @RestController
 
 @RequestMapping
@@ -29,12 +29,11 @@ public class ClienteControlador {
 	private IClienteService serviceCliente;
 
 	@GetMapping("/listarCliente")
-	// public String listarCliente(Model model) el front no esta enviando nada por ello la funcion no recibe nada
-	// Model model hacia referencia al model tymelife En html toma el mismo java
+	
 	public List<ClienteModel> listarCliente() {
-		// model.addAttribute("clientes",serviceCliente.listarClientes());
+		
 		return serviceCliente.listarClientes();
-		// return "clientes.html"; ya no devuelve el html sino la lista de clientes
+		
 	}
 
 	@PostMapping("/saveCliente")
@@ -43,12 +42,7 @@ public class ClienteControlador {
 		return true;
 	}
 
-	// No se usa porque solo esta redireccionando y eso se hace ahora con url en html
-	// @GetMapping("/newCliente")
-	// public String agregarCliente (Model model) {
-	// model.addAttribute("cliente", new ClienteModel());
-	// return "formClientes.html";
-	// }
+	
 	
 
 	@GetMapping("/Cliente/{Cedula}")

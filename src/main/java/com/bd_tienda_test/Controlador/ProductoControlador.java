@@ -41,11 +41,7 @@ public class ProductoControlador {
 		return true;
 	}	
 	
-	//@GetMapping("/newProducto")
-	//public String agregarProducto (Model model) {
-	//	model.addAttribute("producto", new ProductoModel());
-	//	return "formProductos.html";
-	//}
+	
 	
 	@GetMapping ("/Producto/{Codigo}")
 	public ProductoModel obtenerProductoPorCodigo (@PathVariable String Codigo)

@@ -21,8 +21,8 @@ public class ProveedorModel {
 	
 	public ProveedorModel(String nombre, String nit, String direccion, String ciudad, String telefono) {
 		super();
-		nombre_Proveedor = nombre;
 		nit_Proveedor = nit;
+		nombre_Proveedor = nombre;
 		direccion_Proveedor = direccion;
 		ciudad_Proveedor = ciudad;
 		telefono_Proveedor = telefono;

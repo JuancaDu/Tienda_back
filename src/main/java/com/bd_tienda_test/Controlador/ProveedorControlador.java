@@ -19,7 +19,9 @@ import com.bd_tienda_test.Interfaces.Service.IProveedorService;
 import com.bd_tienda_test.Model.ProveedorModel;
 
 @CrossOrigin(origins = "http://localhost:3000")
+
 @RestController
+
 @RequestMapping
 public class ProveedorControlador {
 
@@ -51,21 +53,20 @@ public class ProveedorControlador {
 	
 	
 	@PutMapping("/Proveedor/{nit}")
-	public boolean actualizarProveedorPorNit(@PathVariable String Nit, ProveedorModel p) {
-		Optional<ProveedorModel> proveedor = serviceProveedor.listarIdProveedor(Nit);
+	public boolean actualizarProveedorPorNit(@PathVariable String nit, ProveedorModel p) {
+		Optional<ProveedorModel> proveedor = serviceProveedor.listarIdProveedor(nit);
 		if (proveedor.isPresent()) {
 			serviceProveedor.saveProveedor(p);
 			return true;
 		} else {
 			return false;
 		}
-	}
-	
+	}		
 	
 	@DeleteMapping ("eliminarProveedor/{nit}")
-	public boolean deleteProveedor (@PathVariable String Nit)
+	public boolean deleteProveedor (@PathVariable String nit)
 	{
-		serviceProveedor.deleteProveedor(Nit);
+		serviceProveedor.deleteProveedor(nit);
 		return true;
 	}
 	
